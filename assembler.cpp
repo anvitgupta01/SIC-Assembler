@@ -250,7 +250,8 @@ void pass2Assembler()
     {
         if(asmbly_inst.size()) {
             string asmble_inst = assemble(asmbly_inst);
-            file_o << asmble_inst << endl;
+            if(asmbly_inst.size())
+                file_o << asmble_inst << endl;
         }
     }
 
